@@ -992,6 +992,16 @@ body {
 }
 
 @media (max-width: 768px) {
+    .nav-brand span {
+        display: none;
+    }
+    
+    .nav-brand::after {
+        content: "SEBI Winners";
+        font-weight: 700;
+        font-size: 1rem;
+    }
+    
     .page-title {
         font-size: 3rem;
     }

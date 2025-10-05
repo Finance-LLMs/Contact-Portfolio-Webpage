@@ -236,7 +236,15 @@ body {
     box-shadow: 0 10px 20px rgba(102, 126, 234, 0.3);
 }
 
-.github-link {
+.demo-link.live-demo {
+    background: linear-gradient(135deg, #28a745 0%, #20c997 100%);
+}
+
+.demo-link.live-demo:hover {
+    box-shadow: 0 10px 20px rgba(40, 167, 69, 0.3);
+}
+
+.github-link, .live-demo-link {
     text-align: center;
     margin-bottom: 1rem;
 }

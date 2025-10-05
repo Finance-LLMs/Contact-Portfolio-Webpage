@@ -7,7 +7,7 @@ This is a static webpage showcasing the 5 winners of the Securities Market Hacka
 - **Akshat Parmar** - B.Tech Computer Science and Artificial Intelligence
 - **Abhay Shakya** - M.Tech Computer Science
 - **Tanmay Hire** - M.Tech Computer Science
-- **Shaurya Bhatnagar** - M.Tech Computer Science
+- **Shaurya Bhatnagar** - M.Tech Computational Biology
 
 ## Features
 - Responsive design that works on all devices
@@ -114,4 +114,4 @@ Edit the CSS variables in `styles.css`:
 - **Error Handling**: Graceful fallbacks for missing images
 
 ## License
-See LICENSE file for details.
+The project is licensed under [MIT License](LICENSE).

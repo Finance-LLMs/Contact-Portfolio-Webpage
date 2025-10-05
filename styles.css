@@ -108,6 +108,139 @@ body {
     border-bottom-color: #764ba2;
 }
 
+/* Project Section */
+.project-section {
+    background: rgba(255, 255, 255, 0.98);
+    padding: 4rem 0;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.project-content {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.project-title {
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 3rem;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.problem-solution-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    margin-bottom: 3rem;
+}
+
+.features-innovation {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+}
+
+.problem-card, .solution-card, .features-card, .impact-card {
+    background: white;
+    border-radius: 15px;
+    padding: 2rem;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(102, 126, 234, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.problem-card:hover, .solution-card:hover, .features-card:hover, .impact-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+}
+
+.card-title {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 1rem;
+}
+
+.card-title i {
+    color: #667eea;
+    font-size: 1.1rem;
+}
+
+.problem-heading, .solution-heading {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #667eea;
+    margin-bottom: 1rem;
+}
+
+.problem-description, .solution-description, .impact-description {
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+}
+
+.outcome-box, .tech-stack, .languages-supported, .differentiator, .prototype-stage {
+    background: rgba(102, 126, 234, 0.05);
+    padding: 1rem;
+    border-radius: 8px;
+    border-left: 4px solid #667eea;
+    margin-bottom: 1rem;
+    font-size: 0.9rem;
+    color: #555;
+}
+
+.features-list {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 1.5rem;
+}
+
+.features-list li {
+    padding: 0.5rem 0;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+    color: #555;
+}
+
+.features-list li:last-child {
+    border-bottom: none;
+}
+
+.features-list li strong {
+    color: #667eea;
+}
+
+.demo-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    text-decoration: none;
+    padding: 0.75rem 1.5rem;
+    border-radius: 25px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    margin-bottom: 1rem;
+}
+
+.demo-link:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 20px rgba(102, 126, 234, 0.3);
+}
+
+.github-link {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
 /* Main Content */
 .main-content {
     padding: 4rem 0;
@@ -302,6 +435,20 @@ body {
     
     .affiliation-content {
         gap: 2rem;
+    }
+    
+    .problem-solution-grid,
+    .features-innovation {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+    
+    .project-title {
+        font-size: 2rem;
+    }
+    
+    .problem-card, .solution-card, .features-card, .impact-card {
+        padding: 1.5rem;
     }
     
     .team-grid {

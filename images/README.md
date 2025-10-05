@@ -2,7 +2,7 @@
 
 Please place the following image files in this directory:
 
-1. **vik.jpg** - Photo of Vikranth Udandarao
+1. **vikranth.jpg** - Photo of Vikranth Udandarao
 2. **akshat.jpg** - Photo of Akshat Parmar
 3. **abhay.jpg** - Photo of Abhay Shakya
 4. **tanmay.jpg** - Photo of Tanmay Hire

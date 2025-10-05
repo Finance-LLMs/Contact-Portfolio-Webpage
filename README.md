@@ -25,7 +25,7 @@ Contact-Portfolio-Webpage/
 ├── styles.css          # CSS styling
 ├── script.js           # JavaScript functionality
 ├── images/             # Directory for team member photos
-│   ├── vik.jpg
+│   ├── vikranth.jpg
 │   ├── akshat.jpg
 │   ├── abhay.jpg
 │   ├── tanmay.jpg
@@ -44,7 +44,7 @@ Contact-Portfolio-Webpage/
 
 1. **Add Team Member Photos**:
    - Place the following images in the `images/` directory:
-     - `vik.jpg`
+     - `vikranth.jpg`
      - `akshat.jpg`
      - `abhay.jpg`
      - `tanmay.jpg`

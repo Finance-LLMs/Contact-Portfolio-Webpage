@@ -30,12 +30,6 @@ Contact-Portfolio-Webpage/
 │   ├── abhay.jpg
 │   ├── tanmay.jpg
 │   └── shaurya.jpg
-├── resume/             # Directory for resume PDFs
-│   ├── vikranth-resume.pdf
-│   ├── akshat-resume.pdf
-│   ├── abhay-resume.pdf
-│   ├── tanmay-resume.pdf
-│   └── shaurya-resume.pdf
 ├── README.md           # This file
 └── LICENSE
 ```
@@ -51,22 +45,14 @@ Contact-Portfolio-Webpage/
      - `shaurya.jpg`
    - Recommended image size: 400x400 pixels or larger (square aspect ratio)
 
-2. **Add Resume Files**:
-   - Place PDF resumes in the `resume/` directory:
-     - `vikranth-resume.pdf`
-     - `akshat-resume.pdf`
-     - `abhay-resume.pdf`
-     - `tanmay-resume.pdf`
-     - `shaurya-resume.pdf`
-
-3. **Update Contact Information**:
+2. **Update Contact Information**:
    - Edit `index.html` to update:
      - Email addresses (currently set to example.com)
      - Phone numbers (currently placeholder numbers)
      - LinkedIn profile URLs
      - Any other personal information
 
-4. **Open the Webpage**:
+3. **Open the Webpage**:
    - Simply open `index.html` in any modern web browser
    - No server setup required - it's a static webpage
 

@@ -5,38 +5,100 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Winners - Securities Market Hackathon 2025</title>
     <link rel="stylesheet" href="styles.css">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header class="header">
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-brand">
+                <i class="fas fa-trophy"></i>
+                <span>SEBI Hackathon Winners</span>
+            </div>
+            <div class="nav-menu">
+                <a href="#home" class="nav-link active">Home</a>
+                <a href="#team" class="nav-link">Team</a>
+                <a href="solution.html" class="nav-link">Our Solution</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </div>
+            <div class="nav-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-section">
+        <div class="hero-background">
+            <div class="hero-particles"></div>
+        </div>
         <div class="container">
-            <div class="header-content">
-                <h1 class="main-title">🏆 Winners of Securities Market Hackathon</h1>
-                <p class="subtitle">Global Fintech Fest 2025</p>
-                <div class="event-links">
-                    <a href="https://www.globalfintechfest.com/sebi-hackathon" target="_blank" class="event-link">
-                        <i class="fas fa-trophy"></i> SEBI Hackathon
+            <div class="hero-content">
+                <div class="hero-badge">
+                    <i class="fas fa-award"></i>
+                    <span>Winners 2025</span>
+                </div>
+                <h1 class="hero-title">
+                    <span class="title-main">Securities Market Hackathon</span>
+                    <span class="title-sub">Global Fintech Fest 2025</span>
+                </h1>
+                <p class="hero-description">
+                    Developing innovative AI-powered solutions for retail investor education and engagement
+                </p>
+                <div class="hero-buttons">
+                    <a href="solution.html" class="btn btn-primary">
+                        <i class="fas fa-rocket"></i>
+                        View Our Solution
                     </a>
-                    <a href="https://www.globalfintechfest.com" target="_blank" class="event-link">
-                        <i class="fas fa-globe"></i> Global Fintech Fest
+                    <a href="https://finance-dashboard.finance-midas.tech" target="_blank" class="btn btn-secondary">
+                        <i class="fas fa-external-link-alt"></i>
+                        Live Demo
                     </a>
+                </div>
+                <div class="hero-stats">
+                    <div class="stat-item">
+                        <div class="stat-number">5</div>
+                        <div class="stat-label">Team Members</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">3</div>
+                        <div class="stat-label">Languages</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">1st</div>
+                        <div class="stat-label">Place</div>
+                    </div>
                 </div>
             </div>
         </div>
-    </header>
+        <div class="scroll-indicator">
+            <div class="scroll-arrow">
+                <i class="fas fa-chevron-down"></i>
+            </div>
+        </div>
+    </section>
 
-    <section class="affiliation">
+    <!-- Affiliation Section -->
+    <section class="affiliation-section">
         <div class="container">
-            <div class="affiliation-content">
-                <div class="affiliation-item">
-                    <h3>🔬 Researchers at</h3>
+            <div class="affiliation-grid">
+                <div class="affiliation-card">
+                    <div class="card-icon">
+                        <i class="fas fa-microscope"></i>
+                    </div>
+                    <h3>Researchers at</h3>
                     <a href="https://midas.iiitd.ac.in" target="_blank" class="affiliation-link">
                         Multimodal Digital Media Analysis (MIDAS) Lab
                     </a>
                 </div>
-                <div class="affiliation-item">
-                    <h3>🎓 Students at</h3>
+                <div class="affiliation-card">
+                    <div class="card-icon">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <h3>Students at</h3>
                     <a href="https://iiitd.ac.in" target="_blank" class="affiliation-link">
                         IIIT-Delhi
                     </a>
@@ -45,88 +107,44 @@
         </div>
     </section>
 
-    <section class="project-section">
+    <!-- Project Overview Section -->
+    <section class="project-overview">
         <div class="container">
-            <div class="project-content">
-                <h2 class="project-title">Our Winning Solution</h2>
-                
-                <div class="problem-solution-grid">
-                    <div class="problem-card">
-                        <h3 class="card-title">
-                            <i class="fas fa-exclamation-triangle"></i>
-                            Problem Statement
-                        </h3>
-                        <h4 class="problem-heading">Enhancing Retail Investor Education and Engagement</h4>
-                        <p class="problem-description">
-                            Many retail investors lack the knowledge to navigate the securities market, leading to poor investment decisions or reliance on unverified advice. Further, most online sources of information for retail investors are in English, creating a lack of educative material in various vernacular languages.
-                        </p>
-                        <div class="outcome-box">
-                            <strong>Challenge:</strong> Develop an interactive app that educates users on stock market basics, risk assessment techniques, algo trading/HFT, and portfolio diversification using delayed market data and simulated trading scenarios.
-                        </div>
+            <div class="section-header">
+                <span class="section-badge">Innovation</span>
+                <h2 class="section-title">Indian Finance Investors Dashboard</h2>
+                <p class="section-subtitle">
+                    A multilingual, voice-enabled AI platform revolutionizing financial education
+                </p>
+            </div>
+            <div class="overview-grid">
+                <div class="overview-card">
+                    <div class="card-icon">
+                        <i class="fas fa-globe-americas"></i>
                     </div>
-
-                    <div class="solution-card">
-                        <h3 class="card-title">
-                            <i class="fas fa-lightbulb"></i>
-                            Our Solution
-                        </h3>
-                        <h4 class="solution-heading">Indian Finance Investors Dashboard</h4>
-                        <p class="solution-description">
-                            A multilingual, voice-enabled AI platform that uses video avatars and natural conversation through the ElevenLabs SDK. It provides accessible, educational financial consultations—ideal for retail investors. With added Retrieval-Augmented Generation (RAG), the AI can serve up-to-date, context-rich insights.
-                        </p>
-                        <div class="tech-stack">
-                            <strong>Tech Stack:</strong> AI/ML (Conversational AI, RAG, multilingual LLM agents), ElevenLabs SDK, Node.js/Express, FastAPI, Vanilla JavaScript, CSS3, HTML5
-                        </div>
-                        <div class="languages-supported">
-                            <strong>Languages:</strong> English, Hindi, Tamil
-                        </div>
-                    </div>
+                    <h3>Multilingual Support</h3>
+                    <p>Breaking language barriers with English, Hindi, and Tamil support</p>
                 </div>
-
-                <div class="features-innovation">
-                    <div class="features-card">
-                        <h3 class="card-title">
-                            <i class="fas fa-star"></i>
-                            Key Features & Innovation
-                        </h3>
-                        <ul class="features-list">
-                            <li><strong>Multilingual Conversational AI</strong> - Breaking language barriers in financial education</li>
-                            <li><strong>Voice & Video Interaction</strong> - Real-time conversations with AI avatars</li>
-                            <li><strong>Multiple Financial Advisors</strong> - Different investment philosophies and expertise</li>
-                            <li><strong>RAG Integration</strong> - Up-to-date, context-rich financial insights</li>
-                            <li><strong>SEBI-Compliant</strong> - Educational focus with proper disclaimers</li>
-                            <li><strong>Responsive Design</strong> - Accessible on all devices</li>
-                        </ul>
-                        <div class="differentiator">
-                            <strong>Differentiator:</strong> The first multilingual, voice-and-video AI dashboard that makes financial literacy engaging, interactive, and SEBI-compliant.
-                        </div>
+                <div class="overview-card">
+                    <div class="card-icon">
+                        <i class="fas fa-robot"></i>
                     </div>
-
-                    <div class="impact-card">
-                        <h3 class="card-title">
-                            <i class="fas fa-chart-line"></i>
-                            Impact & Scalability
-                        </h3>
-                        <p class="impact-description">
-                            Democratizes financial education by breaking language barriers and making expert-level financial knowledge accessible to underserved retail investors across India's expanding investment ecosystem.
-                        </p>
-                        <div class="github-link">
-                            <a href="https://github.com/Finance-LLMs/Finance-Investors-Dashboard" target="_blank" class="demo-link">
-                                <i class="fab fa-github"></i>
-                                View Project on GitHub
-                            </a>
-                        </div>
-                        <div class="live-demo-link">
-                            <a href="https://finance-dashboard.finance-midas.tech" target="_blank" class="demo-link live-demo">
-                                <i class="fas fa-external-link-alt"></i>
-                                Live Demo Available
-                            </a>
-                        </div>
-                        <div class="prototype-stage">
-                            <strong>Prototype Stage:</strong> Functional MVP (Minimum Viable Product)
-                        </div>
-                    </div>
+                    <h3>AI-Powered Advisors</h3>
+                    <p>Conversational AI with video avatars and real-time voice interaction</p>
                 </div>
+                <div class="overview-card">
+                    <div class="card-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3>SEBI Compliant</h3>
+                    <p>Educational focus with proper disclaimers and regulatory compliance</p>
+                </div>
+            </div>
+            <div class="overview-cta">
+                <a href="solution.html" class="btn btn-outline">
+                    <i class="fas fa-arrow-right"></i>
+                    Learn More About Our Solution
+                </a>
             </div>
         </div>
     </section>
@@ -189,10 +207,6 @@
                                     <i class="fas fa-phone"></i>
                                     <a href="tel:+916303612591">+91 6303612591</a>
                                 </div>
-                                <!-- <div class="contact-item">
-                                    <i class="fas fa-globe"></i>
-                                    <a href="https://vikranth3140.github.io" target="_blank">vikranth3140.github.io</a>
-                                </div> -->
                             </div>
                             <div class="social-links">
                                 <a href="https://www.linkedin.com/in/akshat-chaw-parmar/" target="_blank" class="social-link linkedin">
@@ -201,9 +215,9 @@
                                 <a href="https://x.com/akshatparmar04" target="_blank" class="social-link twitter">
                                     <i class="fab fa-twitter"></i>
                                 </a>
-                                <!-- <a href="https://drive.google.com/file/d/1JTn7bdNfFBE9FIaWtMzEfbnnSwFnjcCb/view?usp=sharing" target="_blank" class="social-link resume">
+                                <a href="https://drive.google.com/file/d/1Q_e_jym_wwS9sWTrI0WCCKrFbQw830ry/view?usp=sharing" target="_blank" class="social-link resume">
                                     <i class="fas fa-file-pdf"></i>
-                                </a> -->
+                                </a>
                             </div>
                         </div>
                     </div>

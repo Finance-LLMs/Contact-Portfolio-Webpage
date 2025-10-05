@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Solution - Indian Finance Investors Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        /* Additional styles for solution page */
+        .solution-hero {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            padding: 8rem 0 4rem;
+            color: white;
+            text-align: center;
+        }
+        
+        .solution-content {
+            background: white;
+            padding: 6rem 0;
+        }
+        
+        .problem-statement, .solution-details, .features-section, .tech-stack-section {
+            margin-bottom: 6rem;
+        }
+        
+        .content-card {
+            background: var(--bg-secondary);
+            padding: 3rem;
+            border-radius: var(--border-radius-xl);
+            border: 1px solid var(--border-light);
+            margin-bottom: 2rem;
+        }
+        
+        .content-icon {
+            width: 4rem;
+            height: 4rem;
+            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 2rem;
+        }
+        
+        .content-icon i {
+            font-size: 1.5rem;
+            color: white;
+        }
+        
+        .feature-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+        
+        .feature-item {
+            background: white;
+            padding: 2rem;
+            border-radius: var(--border-radius-lg);
+            border: 1px solid var(--border-light);
+            transition: var(--transition);
+        }
+        
+        .feature-item:hover {
+            transform: translateY(-5px);
+            box-shadow: var(--shadow-lg);
+        }
+        
+        .tech-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+        
+        .tech-category {
+            background: white;
+            padding: 2rem;
+            border-radius: var(--border-radius-lg);
+            border: 1px solid var(--border-light);
+        }
+        
+        .tech-category h4 {
+            color: var(--primary-color);
+            margin-bottom: 1rem;
+            font-weight: 600;
+        }
+        
+        .tech-list {
+            list-style: none;
+        }
+        
+        .tech-list li {
+            padding: 0.5rem 0;
+            border-bottom: 1px solid var(--border-light);
+        }
+        
+        .tech-list li:last-child {
+            border-bottom: none;
+        }
+        
+        .impact-stats {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+        
+        .stat-card {
+            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+            color: white;
+            padding: 2rem;
+            border-radius: var(--border-radius-lg);
+            text-align: center;
+        }
+        
+        .stat-number {
+            font-size: 2.5rem;
+            font-weight: 800;
+            display: block;
+            margin-bottom: 0.5rem;
+        }
+        
+        .demo-section {
+            background: var(--bg-secondary);
+            padding: 4rem 0;
+            text-align: center;
+        }
+        
+        .demo-buttons {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-top: 2rem;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-brand">
+                <i class="fas fa-trophy"></i>
+                <span>SEBI Hackathon Winners</span>
+            </div>
+            <div class="nav-menu">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="index.html#team" class="nav-link">Team</a>
+                <a href="solution.html" class="nav-link active">Our Solution</a>
+                <a href="index.html#contact" class="nav-link">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="solution-hero">
+        <div class="container">
+            <div class="hero-badge">
+                <i class="fas fa-lightbulb"></i>
+                <span>Winning Solution</span>
+            </div>
+            <h1 class="hero-title">
+                <span class="title-main">Indian Finance Investors Dashboard</span>
+                <span class="title-sub">Revolutionizing Financial Education Through AI</span>
+            </h1>
+            <p class="hero-description">
+                A multilingual, voice-enabled AI platform that democratizes financial knowledge and makes expert-level education accessible to every retail investor across India.
+            </p>
+        </div>
+    </section>
+
+    <!-- Problem Statement -->
+    <section class="solution-content">
+        <div class="container">
+            <div class="problem-statement">
+                <div class="section-header">
+                    <span class="section-badge">Challenge</span>
+                    <h2 class="section-title">Problem Statement</h2>
+                    <p class="section-subtitle">Understanding the critical gaps in retail investor education</p>
+                </div>
+                
+                <div class="content-card">
+                    <div class="content-icon">
+                        <i class="fas fa-exclamation-triangle"></i>
+                    </div>
+                    <h3 style="color: var(--primary-color); margin-bottom: 1rem; font-size: 1.5rem;">Enhancing Retail Investor Education and Engagement</h3>
+                    
+                    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; margin-top: 2rem;">
+                        <div>
+                            <h4 style="color: var(--error-color); margin-bottom: 1rem;">Key Challenges</h4>
+                            <ul style="color: var(--text-secondary); line-height: 1.8;">
+                                <li>• Many retail investors lack knowledge to navigate securities markets</li>
+                                <li>• Poor investment decisions due to inadequate education</li>
+                                <li>• Reliance on unverified advice and misinformation</li>
+                                <li>• Most educational content available only in English</li>
+                                <li>• Lack of engaging, interactive learning platforms</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h4 style="color: var(--success-color); margin-bottom: 1rem;">Requirements</h4>
+                            <ul style="color: var(--text-secondary); line-height: 1.8;">
+                                <li>• Interactive app for stock market basics education</li>
+                                <li>• Risk assessment techniques training</li>
+                                <li>• Algorithmic trading and HFT concepts</li>
+                                <li>• Portfolio diversification strategies</li>
+                                <li>• Multilingual support for vernacular languages</li>
+                                <li>• Simulated trading scenarios and delayed market data</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Solution Details -->
+            <div class="solution-details">
+                <div class="section-header">
+                    <span class="section-badge">Innovation</span>
+                    <h2 class="section-title">Our Solution</h2>
+                    <p class="section-subtitle">A comprehensive AI-powered platform addressing all identified challenges</p>
+                </div>
+                
+                <div class="content-card">
+                    <div class="content-icon">
+                        <i class="fas fa-robot"></i>
+                    </div>
+                    <h3 style="color: var(--primary-color); margin-bottom: 1rem; font-size: 1.5rem;">AI-Powered Multilingual Financial Education Platform</h3>
+                    
+                    <p style="color: var(--text-secondary); font-size: 1.125rem; line-height: 1.8; margin-bottom: 2rem;">
+                        Finance-Investors-Dashboard is a groundbreaking multilingual, voice-enabled AI platform that uses video avatars and natural conversation through the ElevenLabs SDK. It provides accessible, educational financial consultations—ideal for retail investors seeking to improve their financial literacy.
+                    </p>
+                    
+                    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 2rem;">
+                        <div style="background: white; padding: 2rem; border-radius: var(--border-radius-lg); border: 1px solid var(--border-light);">
+                            <h4 style="color: var(--primary-color); margin-bottom: 1rem;">Core Innovation</h4>
+                            <ul style="color: var(--text-secondary); line-height: 1.6;">
+                                <li>• Real-time voice synthesis via ElevenLabs SDK</li>
+                                <li>• Interactive video avatars for engagement</li>
+                                <li>• Retrieval-Augmented Generation (RAG) for up-to-date insights</li>
+                                <li>• Multiple AI advisor personas with different investment philosophies</li>
+                                <li>• SEBI-compliant educational framework</li>
+                            </ul>
+                        </div>
+                        <div style="background: white; padding: 2rem; border-radius: var(--border-radius-lg); border: 1px solid var(--border-light);">
+                            <h4 style="color: var(--secondary-color); margin-bottom: 1rem;">Target Impact</h4>
+                            <ul style="color: var(--text-secondary); line-height: 1.6;">
+                                <li>• Break language barriers in financial education</li>
+                                <li>• Democratize access to expert financial knowledge</li>
+                                <li>• Enhance retail investor confidence and decision-making</li>
+                                <li>• Support India's expanding investment ecosystem</li>
+                                <li>• Promote financial inclusion across diverse communities</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Key Features -->
+            <div class="features-section">
+                <div class="section-header">
+                    <span class="section-badge">Features</span>
+                    <h2 class="section-title">Key Features & Innovation</h2>
+                    <p class="section-subtitle">What makes our solution unique and impactful</p>
+                </div>
+                
+                <div class="feature-grid">
+                    <div class="feature-item">
+                        <div style="background: linear-gradient(135deg, #10b981, #059669); width: 3rem; height: 3rem; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-bottom: 1rem;">
+                            <i class="fas fa-globe" style="color: white;"></i>
+                        </div>
+                        <h4 style="color: var(--primary-color); margin-bottom: 0.5rem;">Multilingual Conversational AI</h4>
+                        <p style="color: var(--text-secondary);">Breaking language barriers in financial education with support for English, Hindi, and Tamil</p>
+                    </div>
+                    
+                    <div class="feature-item">
+                        <div style="background: linear-gradient(135deg, #8b5cf6, #7c3aed); width: 3rem; height: 3rem; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-bottom: 1rem;">
+                            <i class="fas fa-video" style="color: white;"></i>
+                        </div>
+                        <h4 style="color: var(--primary-color); margin-bottom: 0.5rem;">Voice & Video Interaction</h4>
+                        <p style="color: var(--text-secondary);">Real-time conversations powered by ElevenLabs SDK with speaking indicators and video avatars</p>
+                    </div>
+                    
+                    <div class="feature-item">
+                        <div style="background: linear-gradient(135deg, #f59e0b, #d97706); width: 3rem; height: 3rem; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-bottom: 1rem;">
+                            <i class="fas fa-users" style="color: white;"></i>
+                        </div>
+                        <h4 style="color: var(--primary-color); margin-bottom: 0.5rem;">Multiple Financial Advisors</h4>
+                        <p style="color: var(--text-secondary);">AI personas represent different investment philosophies (value investing, wealth management, valuation analysis)</p>
+                    </div>
+                    
+                    <div class="feature-item">
+                        <div style="background: linear-gradient(135deg, #06b6d4, #0891b2); width: 3rem; height: 3rem; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-bottom: 1rem;">
+                            <i class="fas fa-brain" style="color: white;"></i>
+                        </div>
+                        <h4 style="color: var(--primary-color); margin-bottom: 0.5rem;">RAG Integration</h4>
+                        <p style="color: var(--text-secondary);">Enables retrieval of up-to-date, context-rich financial insights from reliable sources</p>
+                    </div>
+                    
+                    <div class="feature-item">
+                        <div style="background: linear-gradient(135deg, #ef4444, #dc2626); width: 3rem; height: 3rem; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-bottom: 1rem;">
+                            <i class="fas fa-shield-alt" style="color: white;"></i>
+                        </div>
+                        <h4 style="color: var(--primary-color); margin-bottom: 0.5rem;">SEBI-Compliant</h4>
+                        <p style="color: var(--text-secondary);">Transparency that the platform is for educational purposes only and not financial advice</p>
+                    </div>
+                    
+                    <div class="feature-item">
+                        <div style="background: linear-gradient(135deg, #6366f1, #4f46e5); width: 3rem; height: 3rem; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin-bottom: 1rem;">
+                            <i class="fas fa-mobile-alt" style="color: white;"></i>
+                        </div>
+                        <h4 style="color: var(--primary-color); margin-bottom: 0.5rem;">Responsive Dashboard</h4>
+                        <p style="color: var(--text-secondary);">Glassmorphic, mobile-friendly design for seamless user experience across all devices</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Technology Stack -->
+            <div class="tech-stack-section">
+                <div class="section-header">
+                    <span class="section-badge">Technology</span>
+                    <h2 class="section-title">Technology Stack</h2>
+                    <p class="section-subtitle">Built with cutting-edge technologies for optimal performance and scalability</p>
+                </div>
+                
+                <div class="tech-grid">
+                    <div class="tech-category">
+                        <h4><i class="fas fa-robot" style="margin-right: 0.5rem;"></i>AI/ML Technologies</h4>
+                        <ul class="tech-list">
+                            <li>Conversational AI</li>
+                            <li>Retrieval-Augmented Generation (RAG)</li>
+                            <li>Multilingual LLM agents</li>
+                            <li>Real-time voice synthesis (ElevenLabs SDK)</li>
+                            <li>Natural Language Processing</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="tech-category">
+                        <h4><i class="fas fa-code" style="margin-right: 0.5rem;"></i>Web Development</h4>
+                        <ul class="tech-list">
+                            <li>Frontend: Vanilla JavaScript (ES6+)</li>
+                            <li>Build Tool: Webpack</li>
+                            <li>Styling: CSS3 (responsive design)</li>
+                            <li>Markup: HTML5</li>
+                            <li>UI Framework: Custom glassmorphic design</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="tech-category">
+                        <h4><i class="fas fa-server" style="margin-right: 0.5rem;"></i>Backend Infrastructure</h4>
+                        <ul class="tech-list">
+                            <li>Primary: Node.js/Express</li>
+                            <li>Alternative: FastAPI (Python)</li>
+                            <li>API routing & language support</li>
+                            <li>Secure environment configuration</li>
+                            <li>CORS-enabled APIs</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="tech-category">
+                        <h4><i class="fas fa-plug" style="margin-right: 0.5rem;"></i>APIs & Integrations</h4>
+                        <ul class="tech-list">
+                            <li>ElevenLabs API (voice processing)</li>
+                            <li>Multi-language conversational support</li>
+                            <li>Real-time data fetching</li>
+                            <li>Third-party financial data sources</li>
+                            <li>Cloud deployment ready</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Impact & Scalability -->
+            <div class="impact-section">
+                <div class="section-header">
+                    <span class="section-badge">Impact</span>
+                    <h2 class="section-title">Potential Impact & Scalability</h2>
+                    <p class="section-subtitle">Transforming financial education across India and beyond</p>
+                </div>
+                
+                <div class="content-card">
+                    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 3rem;">
+                        <div>
+                            <h4 style="color: var(--primary-color); margin-bottom: 1rem; font-size: 1.25rem;">Immediate Impact</h4>
+                            <ul style="color: var(--text-secondary); line-height: 1.8;">
+                                <li>• Enhanced financial literacy for retail investors</li>
+                                <li>• Improved investment decision-making capabilities</li>
+                                <li>• Increased confidence in securities market participation</li>
+                                <li>• Reduced reliance on unverified financial advice</li>
+                                <li>• Greater financial inclusion across linguistic barriers</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <h4 style="color: var(--secondary-color); margin-bottom: 1rem; font-size: 1.25rem;">Scalability Potential</h4>
+                            <ul style="color: var(--text-secondary); line-height: 1.8;">
+                                <li>• Expandable to additional Indian languages</li>
+                                <li>• Integration with fintech platforms and apps</li>
+                                <li>• Adoption by educational institutions</li>
+                                <li>• Government financial literacy initiatives</li>
+                                <li>• International expansion opportunities</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="impact-stats">
+                    <div class="stat-card">
+                        <span class="stat-number">3</span>
+                        <span>Languages Supported</span>
+                    </div>
+                    <div class="stat-card">
+                        <span class="stat-number">1M+</span>
+                        <span>Potential Users</span>
+                    </div>
+                    <div class="stat-card">
+                        <span class="stat-number">24/7</span>
+                        <span>AI Availability</span>
+                    </div>
+                    <div class="stat-card">
+                        <span class="stat-number">100%</span>
+                        <span>SEBI Compliant</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Demo Section -->
+    <section class="demo-section">
+        <div class="container">
+            <h2 style="font-size: 2.5rem; margin-bottom: 1rem; color: var(--text-primary);">Experience Our Solution</h2>
+            <p style="font-size: 1.125rem; color: var(--text-secondary); margin-bottom: 2rem;">
+                Try our live demo or explore the source code to see how we're revolutionizing financial education
+            </p>
+            
+            <div class="demo-buttons">
+                <a href="https://finance-dashboard.finance-midas.tech" target="_blank" class="btn btn-primary">
+                    <i class="fas fa-external-link-alt"></i>
+                    Live Demo
+                </a>
+                <a href="https://github.com/Finance-LLMs/Finance-Investors-Dashboard" target="_blank" class="btn btn-outline">
+                    <i class="fab fa-github"></i>
+                    View Source Code
+                </a>
+            </div>
+            
+            <div style="margin-top: 3rem; padding: 2rem; background: white; border-radius: var(--border-radius-lg); border: 1px solid var(--border-light);">
+                <h4 style="color: var(--primary-color); margin-bottom: 1rem;">Prototype Stage: Functional MVP</h4>
+                <p style="color: var(--text-secondary);">
+                    Our current prototype demonstrates core functionality including multilingual AI conversations, 
+                    voice interaction, and educational content delivery. The platform is ready for testing and 
+                    further development based on user feedback.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-main">
+                    <div class="footer-brand">
+                        <i class="fas fa-trophy"></i>
+                        <span>SEBI Hackathon Winners 2025</span>
+                    </div>
+                    <p class="footer-description">
+                        Developing innovative AI solutions for financial education and retail investor engagement.
+                    </p>
+                    <div class="footer-links">
+                        <a href="https://www.globalfintechfest.com/sebi-hackathon" target="_blank" class="footer-link">
+                            <i class="fas fa-external-link-alt"></i>
+                            SEBI Hackathon
+                        </a>
+                        <a href="https://www.globalfintechfest.com" target="_blank" class="footer-link">
+                            <i class="fas fa-external-link-alt"></i>
+                            Global Fintech Fest
+                        </a>
+                        <a href="https://github.com/Finance-LLMs/Finance-Investors-Dashboard" target="_blank" class="footer-link">
+                            <i class="fab fa-github"></i>
+                            GitHub Repository
+                        </a>
+                    </div>
+                </div>
+                <div class="footer-affiliations">
+                    <div class="affiliation-item">
+                        <i class="fas fa-microscope"></i>
+                        <a href="https://midas.iiitd.ac.in" target="_blank">MIDAS Lab</a>
+                    </div>
+                    <div class="affiliation-item">
+                        <i class="fas fa-graduation-cap"></i>
+                        <a href="https://iiitd.ac.in" target="_blank">IIIT-Delhi</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Securities Market Hackathon Winners. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
